@@ -13,7 +13,7 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=mysql+mysqlconnector://lentian:123456@db/shop
+      - DATABASE_URL=mysql+mysqlconnector://andi:123456@db/shop
     networks:
       - app_network
 
@@ -24,7 +24,7 @@ services:
       - db_data:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=shop
-      - MYSQL_USER=lentian
+      - MYSQL_USER=andi
       - MYSQL_PASSWORD=123456
     ports:
       - '3306:3306'
